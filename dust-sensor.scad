@@ -54,7 +54,7 @@ echo("Calculad height of Wemos support: ", WEMOS_SUPPORT_HEIGHT);
 // Distance between PCB and box/cutout
 WEMOS_OFFSET = 6;
 // Amount of PCB between edge of board and hole
-WEMOS_SCREW_OFFSET = 0.09;
+WEMOS_SCREW_OFFSET = 0.9;
 // Screen width
 WEMOS_SCREEN_WIDTH = 25;
 // Screen height
@@ -107,11 +107,11 @@ ROTATE = 0;
 // Number of shapes faces
 $fn = 128;
 
-//dust_sensor_back();
+dust_sensor_back();
 
-translate([0, 0, WALL_HEIGHT + EXPLODE])
-rotate([0,ROTATE,0])
-dust_sensor_front();
+//translate([0, 0, WALL_HEIGHT + EXPLODE])
+//rotate([0,ROTATE,0])
+//dust_sensor_front();
   
 
 module air_grill(){
@@ -397,9 +397,9 @@ module wemos_plate() {
     wemos_usb_to_screen = 2.2;
     
     wemos_usb_width = 1;
-    wemos_usb_height = 12;
+    wemos_usb_height = 16;
     wemos_usb_extra_width = 4;
-    wemos_usb_y_offset = 9;
+    wemos_usb_y_offset = 3;
 
     
     screw_extra_margin_height = 21;
