@@ -49,7 +49,7 @@ WEMOS_PCB_WIDTH = 64.1;
 WEMOS_PCB_HEIGHT = 27.5;
 
 WEMOS_WEMOS_PCB_THICKNESS = WEMOS_PCB_THICKNESS;
-WEMOS_SUPPORT_HEIGHT = CHIP_THICKNESS + 1.5;
+WEMOS_SUPPORT_HEIGHT = CHIP_THICKNESS + 1   ;
 echo("Calculad height of Wemos support: ", WEMOS_SUPPORT_HEIGHT);
 // Distance between PCB and box/cutout
 WEMOS_OFFSET = 6;
@@ -107,11 +107,11 @@ ROTATE = 0;
 // Number of shapes faces
 $fn = 128;
 
-dust_sensor_back();
+//dust_sensor_back();
 
-//translate([0, 0, WALL_HEIGHT + EXPLODE])
-//rotate([0,ROTATE,0])
-//dust_sensor_front();
+translate([0, 0, WALL_HEIGHT + EXPLODE])
+rotate([0,ROTATE,0])
+dust_sensor_front();
   
 
 module air_grill(){
